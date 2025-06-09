@@ -1,4 +1,4 @@
-- name:deploying to tomcat
+- name:Deploying to tomcat
   hosts:web
   become:yes
   tasks:
@@ -10,4 +10,4 @@
   - name: Restart Tomcat
       systemd:
         name: tomcat
-        state: restartedq
+        state: restarted
